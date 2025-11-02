@@ -1,0 +1,56 @@
+{
+  "name": "@imjxsx/bsonlite",
+  "version": "1.0.0",
+  "description": "A lightweight, encrypted, BSON-based database for Node.js applications",
+  "type": "module",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "files": [
+    "build",
+    "README.md"
+  ],
+  "scripts": {
+    "dev": "tsx source/test.ts",
+    "build": "tsc",
+    "prepare": "pnpm run build"
+  },
+  "keywords": [
+    "database",
+    "bson",
+    "encrypted",
+    "encryption",
+    "aes",
+    "lowdb",
+    "lightweight",
+    "nosql",
+    "typescript",
+    "nodejs",
+    "secure",
+    "json-alternative",
+    "bsonlite"
+  ],
+  "author": "imjxsx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imjxsx/bsonlite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/imjxsx/bsonlite/issues"
+  },
+  "homepage": "https://github.com/imjxsx/bsonlite#readme",
+  "packageManager": "pnpm@10.20.0",
+  "dependencies": {
+    "@imjxsx/logger": "1.1.1",
+    "bson": "6.10.4",
+    "lodash": "4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash": "4.17.20",
+    "@types/node": "24.9.2",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
