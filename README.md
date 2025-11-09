@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>🧠 @imjxsx/bsonlite (v1.0.0)</h1>
+  <h1>🧠 @imjxsx/bsonlite (v1.0.1)</h1>
   <p>A lightweight, encrypted, BSON-based database for Node.js applications</p>
 </div>
 

@@ -1,6 +1,6 @@
 {
   "name": "@imjxsx/bsonlite",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight, encrypted, BSON-based database for Node.js applications",
   "type": "module",
   "main": "build/index.js",

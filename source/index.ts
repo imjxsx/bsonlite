@@ -3,11 +3,10 @@ import path from "node:path";
 import { AES256GCM } from "./utils/aes-256-gcm.js";
 import { isBuffer } from "./utils/helpers.js";
 import bson from "./utils/bson.js";
-import object from "./utils/object.js";
 import lodash from "lodash";
 import Logger from "@imjxsx/logger";
 
-class BSONLite<T extends Record<PropertyKey, unknown>> {
+class BSONLite<T extends object> {
   private filepath: string;
   private aes: Nullable<AES256GCM>;
   public data: T;
@@ -38,7 +37,7 @@ class BSONLite<T extends Record<PropertyKey, unknown>> {
   public async load(): Promise<void> {
     try {
       const before = Date.now();
-      if (!object.size(this.data)) {
+      if (!Object.keys(this.data).length) {
         try {
           await fs.promises.access(this.filepath);
         } catch {
